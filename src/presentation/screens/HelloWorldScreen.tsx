@@ -3,7 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 export const HelloWorldScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hola mundo</Text>
+      <Text numberOfLines={1} ellipsizeMode="middle" style={styles.title}>
+        Hola mundo desde react native
+      </Text>
     </View>
   );
 };
