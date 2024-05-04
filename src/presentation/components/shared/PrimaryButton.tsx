@@ -11,8 +11,8 @@ export const PrimaryButton = ({ onPress, onLongPress, children }: Props) => {
   return (
     <Pressable
       style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
-      onLongPress={() => onPress && onPress()}
-      onPress={() => onLongPress && onLongPress()}>
+      onLongPress={() => onLongPress && onLongPress()}
+      onPress={() => onPress && onPress()}>
       <Text style={{ color: Platform.OS === 'android' ? 'white' : '#4746Ab' }}>
         {children}
       </Text>
